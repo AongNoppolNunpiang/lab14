@@ -24,10 +24,9 @@ int main()
 
 void showImage(const bool x[][M]){
     for(int i=0 ;i < 72;i++) 
-    cout << "-"; 
-    cout << "\n";
-  
-    for(int i=0 ;i < 30;i++){ 
+    cout << "-";
+    cout << "\n" ;
+    for(int i=0 ;i < 30;i++){  
         cout <<"|";
         for(int j=0;j < 70;j++){
             if(x[i][j] == 0) cout << " "; 
@@ -35,12 +34,12 @@ void showImage(const bool x[][M]){
         }
         cout << "|"<<endl; 
     }
-
-
     for(int i=0 ;i <72;i++) 
+    cout << "-";
     cout << "\n";
     
 }
+
 
 void updateImage(bool aray[][M],int s,int x,int y){
     for(int i=0;i < 30;i++){  
